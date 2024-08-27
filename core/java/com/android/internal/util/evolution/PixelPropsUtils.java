@@ -358,6 +358,7 @@ public final class PixelPropsUtils {
                     setPropValue("TIME", System.currentTimeMillis());
                     if (!isPixelDevice) {
                         if (processName.toLowerCase().contains("learning")
+                                || processName.toLowerCase().contains("gservice")
                                 || processName.toLowerCase().contains("persistent")) {
                             propsToChange.putAll(propsToChangePixel5a);
                         }

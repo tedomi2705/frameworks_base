@@ -915,6 +915,9 @@ public class ApplicationPackageManager extends PackageManager {
         String packageName = ActivityThread.currentPackageName();
         if (packageName != null
                 && (packageName.equals("com.google.android.googlequicksearchbox")
+                || packageName.equals("com.google.android.apps.pixel.agent")
+                || packageName.equals("com.google.android.apps.pixel.creativeassistant")
+                || packageName.equals("com.google.android.dialer")
                 || packageName.equals("com.google.android.apps.nexuslauncher"))) {
             if (Arrays.asList(featuresPixel).contains(name)) return true;
             if (Arrays.asList(featuresPixelOthers).contains(name)) return true;
